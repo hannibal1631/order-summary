@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Red Hat Display';
+  background: hsl(225, 100%, 94%) url(./images/pattern-background-desktop.svg)
+    no-repeat top/contain;
+}
+/* container */
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+  border-radius: 1rem;
+  transform: scale(1.2);
+  overflow: hidden;
+  background-color: white;
+}
+/* card */
+.card {
+  display: flex;
+}
+.card img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+/* order */
+.order {
+  text-align: center;
+  padding: 0 2.5rem;
+}
+.order h1 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.45rem;
+  font-weight: 900;
+  color: var(--Dark-blue);
+}
+.order p {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  color: var(--Desaturated-blue);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* pricing */
+.pricing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.2rem;
+  margin: 0 2.5rem;
+  background-color: var(--Very-pale-blue);
+  border-radius: 0.5rem;
+}
+.pricing .plan {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-left: -3.5rem;
+}
+.pricing h2 {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: var(--Dark-blue);
+}
+.pricing p {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--Desaturated-blue);
+}
+.pricing .link {
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: var(--Bright-blue);
+  transition: all 0.5s;
+}
+.pricing img {
+  width: 2.5rem;
+}
+/* buttons */
+.btn {
+  display: grid;
+  margin: 1.5rem 2.5rem 1.5rem 2.5rem;
+}
+.btn button {
+  margin: 0.25rem 0;
+  padding: 0.9rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+.btn .payment {
+  background-color: var(--Bright-blue);
+  color: var(--Pale-blue);
+  font-weight: 750;
+  font-size: 0.8rem;
+}
+.btn .cancel {
+  background-color: white;
+  color: var(--Desaturated-blue);
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+.payment:hover {
+  background-color: var(--Desaturated-blue);
+  cursor: pointer;
+}
+.cancel:hover {
+  background-color: rgb(217, 23, 23);
+  color: white;
+  cursor: pointer;
+}
